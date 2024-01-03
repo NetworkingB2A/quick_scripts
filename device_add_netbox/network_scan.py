@@ -19,7 +19,7 @@ def network_to_ip_address(network:str) -> list:
     return host_ip_addresses
 
 
-def testing_out_fuctions():
+def main():
     temp_list = network_to_ip_address("192.168.2.0/26")
     pingable_ip_addresses = []
     for ip_address in temp_list:
@@ -29,9 +29,6 @@ def testing_out_fuctions():
             pingable_ip_addresses.append(ip_address)
     
     print(pingable_ip_addresses)
-    
-def main():
-    testing_out_fuctions()
     
 if __name__ == "__main__":
     main()
