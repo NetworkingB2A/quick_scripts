@@ -19,7 +19,7 @@ def network_to_ip_address(network: str) -> list:
     return host_ip_addresses
 
 
-def ping_ip_address(ipv4_address: str, timeout: float=1) -> dict:
+def ping_ip_address(ipv4_address: str, timeout: float = 1) -> dict:
     """
     Pings a given IPv4 address and returns the ping result.
 
