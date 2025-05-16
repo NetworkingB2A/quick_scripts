@@ -1,0 +1,15 @@
+---
+inventory:
+  plugin: NetBoxInventory2
+  # You will need to decide how to load your env vars, or you can hardcode you vars below.
+  # I use a .env file and have my python script load that .env file into my environment at runtime.
+  # I personally don't like to hardcode as the vars, because I might forget to remove them when I load my file to github.
+  # Refer to the Nornir Netbox documentation for the exact details.
+  # options:
+  #   nb_url: https://netbox.local:8000
+  #   nb_token: "1234567890"
+
+runner:
+    plugin: threaded
+    options:
+        num_workers: 5
